@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+graph [ranksep=equally, splines=polyline] ;
+0 [label="Age_21 <= 0.5\ngini = 0.453\nsamples = 537\nvalue = [351, 186]", fillcolor="#f3c4a2"] ;
+1 [label="Pregnancies_2 <= 0.5\ngini = 0.467\nsamples = 490\nvalue = [308, 182]", fillcolor="#f4cbae"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="BMI_32.9 <= 0.5\ngini = 0.481\nsamples = 426\nvalue = [255, 171]", fillcolor="#f6d5be"] ;
+1 -> 2 ;
+3 [label="gini = 0.477\nsamples = 420\nvalue = [255, 165]", fillcolor="#f6d3b9"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 6\nvalue = [0, 6]", fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label="Glucose_155 <= 0.5\ngini = 0.285\nsamples = 64\nvalue = [53, 11]", fillcolor="#ea9b62"] ;
+1 -> 5 ;
+6 [label="gini = 0.248\nsamples = 62\nvalue = [53, 9]", fillcolor="#e9965b"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="Glucose_118 <= 0.5\ngini = 0.156\nsamples = 47\nvalue = [43, 4]", fillcolor="#e78d4b"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Glucose_113 <= 0.5\ngini = 0.122\nsamples = 46\nvalue = [43, 3]", fillcolor="#e78a47"] ;
+8 -> 9 ;
+10 [label="gini = 0.085\nsamples = 45\nvalue = [43, 2]", fillcolor="#e68742"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]", fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]", fillcolor="#399de5"] ;
+8 -> 12 ;
+{rank=same ; 0} ;
+{rank=same ; 1; 8} ;
+{rank=same ; 2; 5; 9} ;
+{rank=same ; 3; 4; 6; 7; 10; 11; 12} ;
+}

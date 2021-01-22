@@ -1,0 +1,13 @@
+numpy
+pandas
+seaborn
+plotly
+matplotlib
+sklearn
+scipy
+statsmodel
+yellowbrick
+xgboost
+pmdarima
+tensorflow
+keras
