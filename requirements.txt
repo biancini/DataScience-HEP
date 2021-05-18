@@ -80,7 +80,7 @@ latexcodec==2.0.1
 linkify-it-py==1.0.1
 lux-api==0.2.3
 lux-widget==0.1.4
-lxml==4.6.2
+lxml==4.6.3
 Markdown==3.2.2
 markdown-it-py==0.6.2
 MarkupSafe==1.1.1
