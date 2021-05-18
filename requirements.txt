@@ -5,7 +5,7 @@ plotly
 matplotlib
 sklearn
 scipy
-statsmodel
+statsmodels
 yellowbrick
 xgboost
 pmdarima
