@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="goout <= 3.5\nsamples = 276\nvalue = [223, 53]\nclass = Sober", fillcolor="#eb9f68"] ;
+1 [label="absences <= 26.5\nsamples = 179\nvalue = [166, 13]\nclass = Sober", fillcolor="#e78b49"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="age <= 20.5\nsamples = 177\nvalue = [166, 11]\nclass = Sober", fillcolor="#e78946"] ;
+1 -> 2 ;
+3 [label="samples = 176\nvalue = [166, 10]\nclass = Sober", fillcolor="#e78945"] ;
+2 -> 3 ;
+4 [label="samples = 1\nvalue = [0, 1]\nclass = Drunk", fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label="samples = 2\nvalue = [0, 2]\nclass = Drunk", fillcolor="#399de5"] ;
+1 -> 5 ;
+6 [label="sex <= 0.5\nsamples = 97\nvalue = [57, 40]\nclass = Sober", fillcolor="#f7d9c4"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="failures <= 1.5\nsamples = 47\nvalue = [38, 9]\nclass = Sober", fillcolor="#eb9f68"] ;
+6 -> 7 ;
+8 [label="samples = 43\nvalue = [37, 6]\nclass = Sober", fillcolor="#e99559"] ;
+7 -> 8 ;
+9 [label="samples = 4\nvalue = [1, 3]\nclass = Drunk", fillcolor="#7bbeee"] ;
+7 -> 9 ;
+10 [label="G1 <= 12.5\nsamples = 50\nvalue = [19, 31]\nclass = Drunk", fillcolor="#b2d9f5"] ;
+6 -> 10 ;
+11 [label="samples = 37\nvalue = [10, 27]\nclass = Drunk", fillcolor="#82c1ef"] ;
+10 -> 11 ;
+12 [label="samples = 13\nvalue = [9, 4]\nclass = Sober", fillcolor="#f1b991"] ;
+10 -> 12 ;
+}

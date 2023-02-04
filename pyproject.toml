@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "datascience-hep"
+version = "0.1.0"
+description = "Files to be used for the lessons on Data Science for High Energy Physics course."
+authors = ["Andrea Biancini <andrea.biancini@uninmib.it>"]
+license = "Apache V2.0"
+readme = "README.md"
+packages = [{include = "datascience_hep"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+Pillow = "^8.2.0"
+jupyter = "^1.0.0"
+numpy = "^1.24.1"
+seaborn = "^0.12.2"
+uproot = "^5.0.2"
+plotly = "^5.11.0"
+matplotlib = "^3.6.2"
+scikit-learn = "^1.2.0"
+yellowbrick = "^1.5"
+#shap = "^0.41.0"
+kneed = "^0.8.2"
+pmdarima = "^2.0.2"
+xgboost = "^1.7.3"
+torch = "1.12.1"
+prophet = "^1.1.1"
+dtreeviz = "^2.0.0"
+graphviz = "^0.20.1"
+llvmlite = "^0.34.0"
+protobuf = "^3.20.3"
+tensorflow = { file = "tensorflow-2.8.0-cp310-cp310-linux_x86_64.whl" }
+keras = "^2.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
