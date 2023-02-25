@@ -4,7 +4,7 @@
 
 Corso di introduzione alla data science, per la facoltà di Fisica dell'università Milano Bicocca.
 
-Anno accademico 2019/2020.
+Anno accademico 2023/2024.
 
 ## Notebook per le lezioni:
 * [Lezione 0.A - Python.ipynb](https://nbviewer.jupyter.org/github/biancini/DataScience-HEP/blob/master/Lezioni/Lezione%200.A%20-%20Python.ipynb)
