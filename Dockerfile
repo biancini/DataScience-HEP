@@ -1,5 +1,4 @@
 FROM ubuntu:22.04
-
 USER root
 WORKDIR /root
 
@@ -40,3 +39,5 @@ RUN rm -f poetry.lock
 RUN poetry install --no-interaction --no-ansi --no-root
 
 WORKDIR /app
+ENTRYPOINT [ "jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root" ]
+

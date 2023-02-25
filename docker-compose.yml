@@ -1,12 +1,10 @@
 version: "3.9"
 services:
+  # Image with all Lesson materials starting jupyter notebook for interaction
   lessons:
-    platform: linux/amd64
-    build: .
-    command: jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root
-    #command: tail -f /dev/null
+    image: biancini/datascience-hep:latest
+    container_name: 'lessons'
     ports:
-      - "8888:8888"
+      - 8888:8888
     volumes:
       - ./:/app
-
