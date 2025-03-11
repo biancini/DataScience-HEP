@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  # Image with all Lesson materials starting jupyter notebook for interaction
+  lessons:
+    image: biancini/datascience-hep:latest
+    container_name: 'lessons'
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/app
